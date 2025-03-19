@@ -28,10 +28,10 @@ class Processor(Component):
         self.processor_model = processor_model
         self.soccet = soccet
 
-    def get_info2(self):
+    def get_info2(self):        #Проверка совместимости всех модулей
         print(f"core_count:{self.core_count}, power_consumption:{self.power_consumption}, processor_model:{self.processor_model}, soccet:{self.soccet}")
 
-    def check_system_compatibility(self):
+    def check_system_compatibility(self):   #Вывод информации о всех компонентах
         if self.soccet == self.motherboard_soccet:
             print("Совместимо")
         else:
